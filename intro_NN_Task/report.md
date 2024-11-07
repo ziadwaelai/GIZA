@@ -36,7 +36,7 @@ The final model architecture parameters included:
 
 ### 4. Hyperparameter Tuning
 
-Optuna was used for hyperparameter optimization, testing combinations of the following parameters:
+**Optuna** was used for hyperparameter optimization, testing combinations of the following parameters:
 - **Learning Rate**: [0.001, 0.01]
 - **Batch Size**: [16, 32, 64]
 - **Number of Layers**: [2, 4, 6]
@@ -48,7 +48,7 @@ After 5 trials, the best-performing hyperparameters were:
 - **Number of Layers**: `2`
 - **Hidden Size**: `32`
 
-These optimal hyperparameters improved the model’s performance, yielding a validation loss (MSE) of **0.0495**.
+Using Optuna for automated hyperparameter tuning provided a **minor enhancement in RMSE**, achieving better performance than manual tuning could have, by exploring a broader parameter space more efficiently. The final validation loss (MSE) was **0.0495**.
 
 ### 5. Training Process
 
@@ -65,7 +65,7 @@ After training with the best hyperparameters, the model was evaluated on the tes
 - **Final Test Loss (MSE)**: 0.0459
 - **Final Test Loss (RMSE)**: 0.2143
 
-This implies that the model's average error is approximately ±0.2°C, demonstrating good predictive accuracy.
+This implies that the model's average error is approximately ±0.2°C if the true temperature is around 10°C, demonstrating good predictive accuracy.
 
 ### 7. Results Visualization
 
@@ -76,4 +76,4 @@ To visually assess the model's performance, the **actual vs. predicted temperatu
 The LSTM model demonstrated effective time series forecasting on the Jena Climate dataset. Key conclusions include:
 - **Accurate Forecasting**: The model achieved a low RMSE, indicating high accuracy in temperature prediction.
 - **Model Generalization**: Despite the complexities of climate data, the model generalized well, as shown by the close alignment of actual and predicted values on the test set.
-- **Hyperparameter Optimization**: Optuna proved useful for fine-tuning model parameters, significantly enhancing performance without manual trial and error.
+- **Hyperparameter Optimization with Optuna**: Optuna was effective for fine-tuning model parameters, leading to a **minor but notable improvement in RMSE**. This automated approach enhanced the model’s performance by systematically exploring a wide range of hyperparameters.

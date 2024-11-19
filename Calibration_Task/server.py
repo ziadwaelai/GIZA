@@ -9,6 +9,7 @@ app = Flask(__name__)
 xgb_model = pickle.load(open("model.pkl", "rb"))
 features_order = pickle.load(open("features_order.pkl", "rb"))
 class_names = pickle.load(open("class_names_order.pkl", "rb"))
+scaler = pickle.load(open("scaler.pkl", "rb"))
 
 def validate_and_reorder_features(input_features):
     ordered_features = []
@@ -21,6 +22,7 @@ def validate_and_reorder_features(input_features):
 
 def custom_predict(model, X):
     x = X.reshape(1, -1)
+    x = scaler.transform(x)
     y_pred = model.predict_proba(x)
     y_pred = pd.DataFrame(y_pred, columns=class_names).to_dict(orient="records")[0]
     # sort the predictions by probability

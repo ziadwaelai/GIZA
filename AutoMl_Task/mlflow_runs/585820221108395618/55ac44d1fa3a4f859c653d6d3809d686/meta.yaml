@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/585820221108395618/55ac44d1fa3a4f859c653d6d3809d686/artifacts
+end_time: 1731867202080
+entry_point_name: ''
+experiment_id: '585820221108395618'
+lifecycle_stage: active
+run_id: 55ac44d1fa3a4f859c653d6d3809d686
+run_name: enthused-goose-166
+run_uuid: 55ac44d1fa3a4f859c653d6d3809d686
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1731865707162
+status: 3
+tags: []
+user_id: root

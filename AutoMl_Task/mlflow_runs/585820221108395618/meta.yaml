@@ -1,0 +1,6 @@
+artifact_location: mlflow-artifacts:/585820221108395618
+creation_time: 1731862475041
+experiment_id: '585820221108395618'
+last_update_time: 1731862475041
+lifecycle_stage: active
+name: unsloth_Llama_3.1_8B_Regression_Univariate

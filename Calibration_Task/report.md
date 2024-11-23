@@ -112,6 +112,7 @@ Calibration metrics and visualizations were used to evaluate the reliability of 
 
 ### **Conclusions**
 1. **MixUp**:
+   - it's noted that the model's accuracy improved after applying MixUp.
    - Successfully mitigated overfitting by increasing data diversity.
    - Improved generalization, leading to better alignment of predicted probabilities.
 

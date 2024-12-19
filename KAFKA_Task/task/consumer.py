@@ -19,7 +19,7 @@ csv_file = "annotations.csv"
 if not os.path.exists(output_dir):
     os.makedirs(output_dir)
 
-consumer.subscribe(['images-data']) # subscribe to the topic
+consumer.subscribe(['image-data']) # subscribe to the topic
 
 def process_message(msg):
     try:

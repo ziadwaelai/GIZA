@@ -13,7 +13,7 @@ producer_conf = {
 producer = Producer(producer_conf)
 
 image_dir = "task/dataset/labeled dataset"
-topic_name = "images-data"
+topic_name = "image-data"
 
 # Callback  
 def on_delivery(err, msg):

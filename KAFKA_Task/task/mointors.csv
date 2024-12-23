@@ -1,0 +1,5 @@
+batchSize,compression,Throughput,Latency
+32768,lz4, 945.88 messages/second,3540.61 ms
+1048576,gzip,878.86 messages/second,4069.84 ms
+65536,lz4, 1375.91 messages/second,3652.30 ms
+65536,zstd, 1307.39 messages/second,61816.66 ms

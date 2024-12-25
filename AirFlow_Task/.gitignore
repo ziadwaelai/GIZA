@@ -1,0 +1,7 @@
+airflow_simulator/airflow_env/
+airflow_env/
+logs/
+*.log
+*.pid
+*.pyc
+__pycache__/
